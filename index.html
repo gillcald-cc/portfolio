@@ -35,20 +35,19 @@ h1{font-weight:800;font-size:28px;line-height:1.1;margin:6px 0 10px;color:#F4FAF
 .btn.alt{background:#E0A526;color:#14595A}
 .btn:hover{opacity:.92}
 .status{font-size:12px;color:#3D5A5B;min-height:14px;margin-top:6px}
-/* Portfolio (right) */
-.portfolio .kicker{color:#2E7D5B}
-.portfolio h2.title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:32px;margin:6px 0 6px;color:#14595A}
-.portfolio .intro{font-size:15px;color:#3D5A5B;margin:0 0 24px;max-width:560px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
-.project{background:#FFFFFF;border-radius:16px;overflow:hidden;text-decoration:none;color:#14595A;box-shadow:0 6px 20px rgba(20,89,90,.14);display:flex;flex-direction:column}
-.project .band{height:8px}
-.project .in{padding:20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
-.project .ptag{font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2E7D5B}
-.project h3{font-weight:800;font-size:20px;margin:0;line-height:1.2}
+/* Portfolio (right), matches artboard D */
+.portfolio .name{font-weight:800;font-size:30px;color:#14595A;margin:0;line-height:1.1}
+.portfolio .sub{font-weight:700;font-size:12px;letter-spacing:2.5px;color:#A9481A;margin:6px 0 22px}
+.grid{display:flex;flex-direction:column;gap:20px}
+.project{background:#FFFFFF;border-radius:16px;overflow:hidden;text-decoration:none;color:#14595A;border:1px solid #D5E3DF;display:block}
+.project .banner{height:110px;display:flex;align-items:center;justify-content:center;color:#F4FAF8;font-weight:800;font-size:20px}
+.project .in{padding:16px 20px 18px}
+.project .shot{display:block;width:100%;height:320px;object-fit:cover;object-position:top;border-bottom:1px solid #D5E3DF}
+.project .ptag{display:block;font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2E7D5B}
+.project h3{font-weight:800;font-size:18px;margin:6px 0 4px;line-height:1.2}
 .project p{margin:0;font-size:14px;line-height:1.5;color:#3D5A5B}
-.project .more{font-weight:700;font-size:13px;margin-top:auto;color:#14595A}
 .project:hover{outline:2px solid #14595A}
-.contactbox{margin-top:28px;padding:20px 22px;background:#FFFFFF;border-radius:16px;font-size:14px;color:#3D5A5B;box-shadow:0 6px 20px rgba(20,89,90,.14)}
+.contactbox{margin-top:24px;padding:18px 20px;background:#FFFFFF;border-radius:16px;font-size:14px;color:#3D5A5B;border:1px solid #D5E3DF}
 .contactbox a{color:#14595A;font-weight:700}
 @media (max-width:860px){body{grid-template-columns:1fr;padding:20px 16px}.card{position:static;max-width:400px;margin:0 auto}}
 </style>
@@ -107,26 +106,25 @@ h1{font-weight:800;font-size:28px;line-height:1.1;margin:6px 0 10px;color:#F4FAF
 </main>
 
 <section class="portfolio" id="portfolio">
-<div class="kicker">PORTFOLIO</div>
-<h2 class="title">Selected work</h2>
-<p class="intro">Fast, affordable websites, designed with AI assistance and checked by hand before launch.</p>
+<h2 class="name">Gillian Caldwell</h2>
+<div class="sub">SELECTED WORK</div>
 
 <div class="grid">
 <a class="project" href="coffee-craft.html" target="_blank" rel="noopener">
-<div class="band" style="background:#1B7F79"></div>
-<div class="in"><span class="ptag">Live website</span><h3>Coffee Craft</h3><p>Website for a specialty coffee shop on Leisure Isle, Knysna.</p><span class="more">View project →</span></div>
+<img class="shot" src="coffee-craft-home.png" alt="Coffee Craft home page mockup">
+<div class="in"><span class="ptag">Live website</span><h3>Coffee Craft</h3><p>Coffee shop site with menu and visit pages.</p></div>
 </a>
 <a class="project" href="cx-fit.html" target="_blank" rel="noopener">
-<div class="band" style="background:#8A9A3B"></div>
-<div class="in"><span class="ptag">Concept mockup</span><h3>CX Fit Knysna</h3><p>Website concept for a fitness business in Knysna.</p><span class="more">View project →</span></div>
+<img class="shot" src="cx-fit-home.png" alt="CX Fit Knysna home page mockup">
+<div class="in"><span class="ptag">Concept mockup</span><h3>CX Fit Knysna</h3><p>Fitness business website concept.</p></div>
 </a>
 <a class="project" href="western-heads.html" target="_blank" rel="noopener">
-<div class="band" style="background:#E0A526"></div>
-<div class="in"><span class="ptag">Concept mockup</span><h3>Western Heads FMU</h3><p>Website concept for a fire management unit in Knysna.</p><span class="more">View project →</span></div>
+<img class="shot" src="western-heads-home.png" alt="Western Heads FMU home page mockup">
+<div class="in"><span class="ptag">Concept mockup</span><h3>Western Heads FMU</h3><p>Fire management unit website concept.</p></div>
 </a>
 <a class="project" href="https://claude.ai/artifact/64DaX2ddMu6SNe6hvTpCrf" target="_blank" rel="noopener">
-<div class="band" style="background:#D9652B"></div>
-<div class="in"><span class="ptag">Web app</span><h3>Favourite Mistakes</h3><p>An English practice app for students, built with AI assistance.</p><span class="more">View project →</span></div>
+<div class="banner" style="background:#D9652B">Favourite Mistakes</div>
+<div class="in"><span class="ptag">Web app</span><h3>Favourite Mistakes</h3><p>An English practice app for students, built with AI assistance.</p></div>
 </a>
 </div>
 
