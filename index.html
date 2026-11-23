@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gillian Caldwell | Web Designer &amp; Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&family=Shrikhand&family=DM+Sans:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#E6EFEC;color:#1F3B3C;font-family:'Montserrat',sans-serif;min-height:100vh;display:grid;grid-template-columns:400px 1fr;gap:40px;align-items:start;padding:40px 48px}
+/* Business card (settled design, left) */
+.card{background:#FFFFFF;border-radius:16px;overflow:hidden;box-shadow:0 6px 20px rgba(20,89,90,.14);position:sticky;top:40px}
+.head{background:#14595A;color:#F4FAF8;padding:20px 22px 18px}
+.kicker{font-weight:600;font-size:11px;letter-spacing:2.5px;color:#A8E6CF}
+h1{font-weight:800;font-size:28px;line-height:1.1;margin:6px 0 10px;color:#F4FAF8}
+.role{font-weight:500;font-size:15px;color:#A8E6CF;margin:0}
+.stripe{display:flex;height:6px}
+.stripe div{flex:1}
+.body{padding:18px 22px 20px}
+.tag{font-weight:800;font-size:16px;color:#14595A;margin:0 0 6px}
+.blurb{font-size:14px;line-height:1.5;color:#3D5A5B;margin:0 0 16px}
+.contact{display:flex;align-items:center;gap:12px;border-top:1px solid #D5E3DF;border-bottom:1px solid #D5E3DF;padding:12px 0;margin-bottom:16px}
+.rows{flex:1;min-width:0;font-size:15px;font-weight:600;color:#14595A}
+.label{display:block;font-size:10px;letter-spacing:1.8px;color:#2E7D5B;font-weight:700;margin-top:8px}
+.label:first-child{margin-top:0}
+.rows a{color:#14595A;text-decoration:none;word-break:break-all}
+.qr-wrap{flex:none;text-align:center}
+.qr{width:72px;height:72px;background:#FFFFFF;border:1px solid #14595A;padding:5px}
+.qr svg{display:block;width:100%;height:100%}
+.qrl{font-size:8px;font-weight:700;letter-spacing:1px;color:#3D5A5B;margin-top:4px}
+.actions{display:flex;flex-direction:column;gap:8px}
+.btn{display:block;padding:12px;border:none;border-radius:10px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;text-decoration:none;text-align:center;background:#14595A;color:#F4FAF8;cursor:pointer}
+.btn.green{background:#2E7D5B;color:#F4FAF8}
+.btn.alt{background:#E0A526;color:#14595A}
+.btn:hover{opacity:.92}
+.status{font-size:12px;color:#3D5A5B;min-height:14px;margin-top:6px}
+/* Portfolio (right) */
+.portfolio .kicker{color:#2E7D5B}
+.portfolio h2.title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:32px;margin:6px 0 6px;color:#14595A}
+.portfolio .intro{font-size:15px;color:#3D5A5B;margin:0 0 24px;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.project{background:#FFFFFF;border-radius:16px;overflow:hidden;text-decoration:none;color:#14595A;box-shadow:0 6px 20px rgba(20,89,90,.14);display:flex;flex-direction:column}
+.project .band{height:8px}
+.project .in{padding:20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.project .ptag{font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#2E7D5B}
+.project h3{font-weight:800;font-size:20px;margin:0;line-height:1.2}
+.project p{margin:0;font-size:14px;line-height:1.5;color:#3D5A5B}
+.project .more{font-weight:700;font-size:13px;margin-top:auto;color:#14595A}
+.project:hover{outline:2px solid #14595A}
+.contactbox{margin-top:28px;padding:20px 22px;background:#FFFFFF;border-radius:16px;font-size:14px;color:#3D5A5B;box-shadow:0 6px 20px rgba(20,89,90,.14)}
+.contactbox a{color:#14595A;font-weight:700}
+@media (max-width:860px){body{grid-template-columns:1fr;padding:20px 16px}.card{position:static;max-width:400px;margin:0 auto}}
+</style>
+</head>
+<body>
+
+<main class="card" aria-label="Business card">
+<header class="head">
+<div class="kicker">WEB DESIGN STUDIO</div>
+<h1>Gillian Caldwell</h1>
+<p class="role">Web Designer &amp; Developer</p>
+</header>
+<div class="stripe">
+<div style="background:#E0A526"></div>
+<div style="background:#D9652B"></div>
+<div style="background:#A9481A"></div>
+<div style="background:#8A9A3B"></div>
+<div style="background:#2E7D5B"></div>
+</div>
+<section class="body">
+<p class="tag">Fast websites. Affordable prices.</p>
+<p class="blurb">AI-assisted, hand-checked and tested before launch. Websites in 7 days, starting from R5 000.</p>
+
+<div class="contact">
+<div class="rows">
+<span class="label">EMAIL</span><a href="mailto:gillcald@gmail.com">gillcald@gmail.com</a>
+<span class="label">PHONE</span><a href="tel:+27741608657">074 160 8657</a>
+</div>
+<div class="qr-wrap">
+<div class="qr">
+<svg aria-label="Placeholder QR code, not a real code" role="img" viewBox="0 0 210 210">
+<rect x="0" y="0" width="60" height="60" fill="#14595A"/><rect x="10" y="10" width="40" height="40" fill="#FFFFFF"/><rect x="20" y="20" width="20" height="20" fill="#14595A"/>
+<rect x="150" y="0" width="60" height="60" fill="#14595A"/><rect x="160" y="10" width="40" height="40" fill="#FFFFFF"/><rect x="170" y="20" width="20" height="20" fill="#14595A"/>
+<rect x="0" y="150" width="60" height="60" fill="#14595A"/><rect x="10" y="160" width="40" height="40" fill="#FFFFFF"/><rect x="20" y="170" width="20" height="20" fill="#14595A"/>
+<rect x="90" y="90" width="14" height="14" fill="#14595A"/><rect x="130" y="90" width="14" height="14" fill="#14595A"/><rect x="110" y="110" width="14" height="14" fill="#14595A"/><rect x="150" y="110" width="14" height="14" fill="#14595A"/><rect x="90" y="130" width="14" height="14" fill="#14595A"/><rect x="130" y="150" width="14" height="14" fill="#14595A"/><rect x="170" y="130" width="14" height="14" fill="#14595A"/><rect x="110" y="170" width="14" height="14" fill="#14595A"/>
+</svg>
+</div>
+<div class="qrl">QR PLACEHOLDER</div>
+</div>
+</div>
+
+<div class="actions">
+<a class="btn" href="#portfolio">View my portfolio</a>
+<a class="btn green" href="https://wa.me/27741608657?text=Hi%20Gillian%2C%20I%27d%20like%20a%20website%20quote">Message me on WhatsApp</a>
+<button class="btn alt" id="copy" type="button">Copy my contact details</button>
+</div>
+<div class="status" id="status" role="status" aria-live="polite"></div>
+</section>
+<div class="stripe">
+<div style="background:#1B7F79"></div>
+<div style="background:#8A9A3B"></div>
+<div style="background:#E0A526"></div>
+<div style="background:#D9652B"></div>
+<div style="background:#14595A"></div>
+</div>
+</main>
+
+<section class="portfolio" id="portfolio">
+<div class="kicker">PORTFOLIO</div>
+<h2 class="title">Selected work</h2>
+<p class="intro">Fast, affordable websites, designed with AI assistance and checked by hand before launch.</p>
+
+<div class="grid">
+<a class="project" href="coffee-craft.html" target="_blank" rel="noopener">
+<div class="band" style="background:#1B7F79"></div>
+<div class="in"><span class="ptag">Live website</span><h3>Coffee Craft</h3><p>Website for a specialty coffee shop on Leisure Isle, Knysna.</p><span class="more">View project →</span></div>
+</a>
+<a class="project" href="cx-fit.html" target="_blank" rel="noopener">
+<div class="band" style="background:#8A9A3B"></div>
+<div class="in"><span class="ptag">Concept mockup</span><h3>CX Fit Knysna</h3><p>Website concept for a fitness business in Knysna.</p><span class="more">View project →</span></div>
+</a>
+<a class="project" href="western-heads.html" target="_blank" rel="noopener">
+<div class="band" style="background:#E0A526"></div>
+<div class="in"><span class="ptag">Concept mockup</span><h3>Western Heads FMU</h3><p>Website concept for a fire management unit in Knysna.</p><span class="more">View project →</span></div>
+</a>
+<a class="project" href="https://claude.ai/artifact/64DaX2ddMu6SNe6hvTpCrf" target="_blank" rel="noopener">
+<div class="band" style="background:#D9652B"></div>
+<div class="in"><span class="ptag">Web app</span><h3>Favourite Mistakes</h3><p>An English practice app for students, built with AI assistance.</p><span class="more">View project →</span></div>
+</a>
+</div>
+
+<div class="contactbox">Want a website like these? Message me on WhatsApp or email gillcald@gmail.com for a quote.</div>
+</section>
+
+<script>
+(function(){
+var text = "Gillian Caldwell\nWeb Designer & Developer\nEmail: gillcald@gmail.com\nPhone: 074 160 8657";
+var btn = document.getElementById('copy');
+var status = document.getElementById('status');
+btn.addEventListener('click', function(){
+  try {
+    navigator.clipboard.writeText(text).then(function(){
+      status.textContent = 'Contact details copied.';
+    }, function(){
+      status.textContent = 'Copy is blocked here. Please use the email and phone shown above.';
+    });
+  } catch (e) {
+    status.textContent = 'Copy is blocked here. Please use the email and phone shown above.';
+  }
+});
+})();
+</script>
+</body>
+</html>
